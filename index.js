@@ -8,7 +8,7 @@ app.get('/', (req, res) => {
 
 
 app.get('/api/create', (req, res) => {
-	fs.writeFile("/bob/helloWorld.txt","hello there", ()=>{})
+	fs.writeFile("helloWorld.txt","hello there", ()=>{})
 	return res.json({ success: true })
 });
 
